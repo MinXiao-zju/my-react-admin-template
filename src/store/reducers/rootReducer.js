@@ -2,6 +2,7 @@ import { combineReducers } from "redux";
 import productReducer from "./productReducer";
 import accountReducer from "./accountReducer";
 import userReducer from "./userReducer";
+import orderReducer from "./orderReducer";
 
 const intialState = {
     appName: 'my project',
@@ -39,7 +40,8 @@ const rootReducer = combineReducers({
     root: appReducer,
     account: accountReducer,
     products: productReducer,
-    users: userReducer
+    users: userReducer,
+    orders: orderReducer
 });
 
 export default rootReducer;

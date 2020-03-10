@@ -1,8 +1,7 @@
 import React from 'react';
-const ProductList = ({ products }) => {
+const ProductList = ({products, onSelect}) => {
     const theProducts = products || [];
     return <div className="table-responsive portlet">
-        <h2>Prodct List</h2>
         <table className="table">
             <thead className="thead-light">
                 <tr>

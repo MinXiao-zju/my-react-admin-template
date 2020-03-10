@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Home = ({props}) => (
-    <div>home/home</div>
+    <div>Dashboard</div>
 );
 
 export default Home;

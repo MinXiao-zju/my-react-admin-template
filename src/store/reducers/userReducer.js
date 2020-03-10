@@ -11,7 +11,7 @@ const intialState = {
 };
 
 export const userTypes = {
-    ADD_ADMIN : "ADD_ADMIN",
+    ADD_ADMIN: "ADD_ADMIN",
     REMOVE_ADMIN: 'REMOVE_ADMIN'
 };
 
@@ -28,7 +28,14 @@ export const userActions = {
 
 const userReducer = (state = intialState, action) => {
     switch (action.type) {
+        case userTypes.ADD_ADMIN: { //TODO :这里写成 userActions.ADD_ADMIN 导致错误的判断逻辑，:)
+            return { ...state, users: state.users.filter(x => x.id !== action.user.id), admins: [...state.admins, action.user] };
+        }
+        case userTypes.REMOVE_ADMIN: {
+            return { ...state, admins: state.admins.filter(x => x.id !== action.user.id), users: [...state.users, action.user] };
+        }
         default:
+            console.log('do nothing');
             return state;
     }
 }
