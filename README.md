@@ -1,6 +1,15 @@
+
+## About this project
+
 > 本项目初始源码来自 [https://github.com/delprzemo/react-admin-template](https://github.com/delprzemo/react-admin-template)，原始项目使用了 typescript 来编写。作为前端项目，如果完全按照后端项目的思维去开发，灵活、机动才是前端的做法，后端设计业务，严谨，强类型这是必须的。
 > 所以使用 ES6 重新把所有的代码重写了一遍。
 > React 开发关键的是组件思维、使用 Redux 关键的是状态树的设计。通过重写，可以把这些都好好捋一捋。
+
+
+### 主要的变化包括
+
+- 使用 ES6 替代 Typescript
+- 遵循 (Ducks)[https://github.com/erikras/ducks-modular-redux] 关于一种新的 Redux 项目结构的提议重新组织项目结构。
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
