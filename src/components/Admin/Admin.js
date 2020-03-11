@@ -6,12 +6,13 @@ import TopMenu from './subs/TopMenu';
 import LeftMenu from './subs/LeftMenu';
 import Users from '../Users/Users';
 import Orders from '../Orders/Orders';
+import Notifications from '../../common/components/Notifications';
 
 class Admin extends Component {
 
     render() {
         return <React.Fragment>
-            {/* <Notifications />*/}
+           <Notifications />
             <LeftMenu />
             <div id="content-wrapper" className="d-flex flex-column">
                 <div id="content">

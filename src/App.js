@@ -4,6 +4,7 @@ import React from 'react';
 // TODO: 以下两个 css 决定了真个应用的外观
 import './App.css';
 import './styles/sb-admin-2.min.css';
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less';
 
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import PrivateRoute from './common/components/PrivateRoute';
